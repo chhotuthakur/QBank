@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/parent_scroll">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/child_relative"
+            android:padding="12dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edq"
+                android:hint="Question"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_rect"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eda"
+                android:layout_below="@id/edq"
+                android:hint="Answer A"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_rect"
+                android:maxLines="1"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edb"
+                android:hint="Answer B"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/eda"
+                android:background="@drawable/bg_rect"
+                android:maxLines="1"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edc"
+                android:hint="Answer C"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/edb"
+                android:background="@drawable/bg_rect"
+                android:maxLines="1"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edd"
+                android:hint="Answer D"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/edc"
+                android:background="@drawable/bg_rect"
+                android:maxLines="1"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edr"
+                android:hint="Right Answer"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/edd"
+                android:background="@drawable/bg_rect"
+                android:maxLines="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_submit"
+                android:text="Add Question"
+                android:layout_below="@id/edr"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
